@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
 import { NavController } from 'ionic-angular';
 import { TutorialPage } from './../tutorial/tutorial';
 import { PerfilCatador } from './../perfil-catador/perfil-catador';
@@ -14,6 +15,7 @@ import { CadastroCatadorWebPage } from './../cadastro-catador-web/cadastro-catad
 import { MenuCadastroComponent } from './../menu-cadastro/menu-cadastro';
 import { PerfilCooperativa } from './../perfil-cooperativa/perfil-cooperativa';
 import { SplashScreen } from '@ionic-native/splash-screen';
+import { LangPage } from './../lang-page/lang-page';
 
 
 @Component({
@@ -22,7 +24,10 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 })
 export class MenuPage {
 
-    constructor(public navCtrl: NavController, private splashScreen: SplashScreen) {
+    constructor(public navCtrl: NavController, 
+        private splashScreen: SplashScreen, 
+        private translate: TranslateService) {
+            
     }
 
     openTutorial() {
@@ -73,7 +78,14 @@ export class MenuPage {
         this.navCtrl.push(PerfilCooperativa);
     }
 
+<<<<<<< a446cef333e2db9fa4afa3d75bf023c23bae4331
     openSplash() {
         this.splashScreen.show();
     }
+=======
+    openLangPage() {
+        this.navCtrl.push(LangPage);
+    }
+
+>>>>>>> Translation
 }
