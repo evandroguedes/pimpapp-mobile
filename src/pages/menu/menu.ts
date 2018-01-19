@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
 import { NavController } from 'ionic-angular';
 import { TutorialPage } from './../tutorial/tutorial';
 import { PerfilCatador } from './../perfil-catador/perfil-catador';
@@ -13,6 +14,7 @@ import { CadastroCatador } from './../cadastro-catador/cadastro-catador';
 import { CadastroCatadorWebPage } from './../cadastro-catador-web/cadastro-catador-web';
 import { MenuCadastroComponent } from './../menu-cadastro/menu-cadastro';
 import { PerfilCooperativa } from './../perfil-cooperativa/perfil-cooperativa';
+import { LangPage } from './../lang-page/lang-page';
 
 
 @Component({
@@ -21,7 +23,11 @@ import { PerfilCooperativa } from './../perfil-cooperativa/perfil-cooperativa';
 })
 export class MenuPage {
 
-    constructor(public navCtrl: NavController) {
+    public param: '';
+
+    
+    constructor(public navCtrl: NavController, private translate: TranslateService) {
+
     }
 
     openTutorial() {
@@ -66,6 +72,10 @@ export class MenuPage {
 
     openCooperativaPage() {
         this.navCtrl.push(PerfilCooperativa);
+    }
+
+    openLangPage() {
+        this.navCtrl.push(LangPage);
     }
 
 }
