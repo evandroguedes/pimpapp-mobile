@@ -14,7 +14,10 @@ import { CadastroCatador } from './../cadastro-catador/cadastro-catador';
 import { CadastroCatadorWebPage } from './../cadastro-catador-web/cadastro-catador-web';
 import { MenuCadastroComponent } from './../menu-cadastro/menu-cadastro';
 import { PerfilCooperativa } from './../perfil-cooperativa/perfil-cooperativa';
+<<<<<<< HEAD
 import { SplashScreen } from '@ionic-native/splash-screen';
+=======
+>>>>>>> 0b329c2110d69135bbc566a629d99d3e5ca349c3
 import { LangPage } from './../lang-page/lang-page';
 
 
@@ -24,10 +27,18 @@ import { LangPage } from './../lang-page/lang-page';
 })
 export class MenuPage {
 
+<<<<<<< HEAD
     constructor(public navCtrl: NavController, 
         private splashScreen: SplashScreen, 
         private translate: TranslateService) {
             
+=======
+    public param: '';
+
+    
+    constructor(public navCtrl: NavController, private translate: TranslateService) {
+
+>>>>>>> 0b329c2110d69135bbc566a629d99d3e5ca349c3
     }
 
     openTutorial() {
