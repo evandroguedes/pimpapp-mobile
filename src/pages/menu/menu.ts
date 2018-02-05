@@ -78,14 +78,11 @@ export class MenuPage {
         this.navCtrl.push(PerfilCooperativa);
     }
 
-<<<<<<< a446cef333e2db9fa4afa3d75bf023c23bae4331
     openSplash() {
         this.splashScreen.show();
     }
-=======
     openLangPage() {
         this.navCtrl.push(LangPage);
     }
 
->>>>>>> Translation
 }
